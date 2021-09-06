@@ -4,19 +4,27 @@
     box-sizing: border-box;
 }
 
-.logo{
+body {
+    background-color: green;
+  }
+
+body > .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+body > .gallery >img {
+    height: 200px;
+    width: 300px;
+}
+
+.top{
     max-width: 100px;
     max-height: 100px;
 }
 
-.grid {
-    height: 500px;
-    width: 500px;
-    border: 5px solid red;
-    margin: 50px auto;
-    padding: 10px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1fr;
+.top{
+    display: flex;
+    align-items: center;
 }
