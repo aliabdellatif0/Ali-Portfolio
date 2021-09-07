@@ -46,8 +46,22 @@ body > .gallery > img {
   left: 40px;
 }
 
+.phone {
+  position: absolute;
+  top: 740px;
+  left: 160px;
+}
+
 .wave {
   position: absolute;
   left: 0px;
   top: 400px;
+}
+
+ul#menu {
+  list-style: none;
+}
+
+ul#menu li {
+  display: inline;
 }
