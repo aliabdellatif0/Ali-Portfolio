@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: green;
-  }
+
 
 body > .gallery{
     display: grid;
@@ -27,4 +25,30 @@ body > .gallery >img {
 .top{
     display: flex;
     align-items: center;
+}
+
+.portfolio-head{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+.gallery_img{
+    width: 25%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.gallery_img2{
+    width: 25%;
+    position: relative;
+    top: 20px;
+    left: 40px;
+
 }
