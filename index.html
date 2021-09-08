@@ -1,82 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/_base.scss">
+    <link rel="stylesheet" href="styles/_components.scss">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/_responsiveness.scss">
+    <title>Home</title>
 </head>
 
 <body>
-
-  <!--
-    Code is split into top middle and bottom
-    using flexboxes the content should fill the screen and scale accordingly
-    if you look at the css, anytime flex:[number] is used, its essentially setting the ratio of
-    the space available to use
-
-    certain css properties such as flex-wrap etc might be required to make it even more responsive
-    reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-    Any images used alongside flexboxes should be wrapped in a div to make things easier
-
-    if i was going to continue doing this to make sure it looked like that figma thing you showed me id:
-    1: add padding and resize accordingly to make things look good
-    2: add more style to the list items - https://www.w3schools.com/css/css_link.asp
-    3: add style to the button - https://www.w3schools.com/howto/howto_css_text_buttons.asp
-    4: fonts
-    6: media queries for the desktop version
-  -->
-
-  <div class ="top">
-    
-    <div class ="horizontalwrapper">
-      <div class="fleximgwrapper">
-        <img src="images/logo.png" alt="logo"/>
-      </div>
-
-      <ul>
-        <li ><a href=""> About </a></li>
-        <li ><a href=""> Work </a></li>
-        <li ><a href=""> Contact </a></li>
-      </ul>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="social mobile-social">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+        <div class="social desktop-social">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+    </nav>
+    <div class="home" id="home">
+        <div class="text">
+            <p>Designing the future <br>An aspiring web developer.</p>
+            <a href="#projects" class="btn">My Projects</a>
+        </div>
+        <div class="atom-img">
+            <img src="images/atom.png" alt="">
+        </div>
+        <div class="web-img">
+            <img src="images/ban-img.png" alt="">
+        </div>
     </div>
-
-  </div>
-  <div class ="middle">
-    <p>mid</p>
-    <div class ="horizontalwrapper">
-      
-      <div class="fleximgwrapper">
-        <img src="images/react.png" alt="react"/>
-      </div>
-
-      <div class="fleximgwrapper">
-        <img src="images/Molecule-Icon.gif" alt="Molecule-Icon"/>
-      </div>
-    
+    <div class="footer">
+        <img src="images/bg.png" alt="">
     </div>
+    <div id="work" class="work-desktop">
+        <div class="work-head">Portfolio</div>
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
 
-    <h1>
-      Designing the future.
-    </h1>
-    <h3>
-      Hi, I'm Ali. An aspiring software engineer.
-    </h3>
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        </div>
+                        <img src="images/desktop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
 
-    <button class="btn projects">
-      My Projects
-    </button>
-    
+            </div>
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
 
-  </div>
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        </div>
+                        <img src="images/desktop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
 
-  <div class ="bottom">
-    <p>bottom</p>
-  </div>
-    
-  
+            </div>
+        </div>
+    </div>
+    <div id="work-m" class="work-mobile">
+        <div class="work-head">Portfolio</div>
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
 
-</body>
-</html>
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        </div>
+                        <img src="images/desktop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        </div>
+                        <img src="images/desktop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <img class="mobile-bg2" src="images/bg2.PNG" alt="">
+        <p class="p1">About Me</p>
+        <div class="inner-about">
+            <div class="left">
+                <div class="img-bg">
+                    <div class="img">
+                        <img src="images/man.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img class="desktop-bg2" src="images/bg2.PNG" alt="">
+                <p class="p2">Hello world.<br>I’m Ali, a web developer.<br> I enjoy implementing my wide range of coding skills with a touch of creativity to bring you the best webistes.
+                </p>
+                <a href="#" class="btn2">Resume</a>
+            </div>
+        </div>
+        <p id="contact" class="p3">email: ali.abdlaitf@gmail.com</p>
+        <div class="social-footer">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+    </div>
