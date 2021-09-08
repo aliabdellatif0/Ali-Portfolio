@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body > .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+body > .gallery > img {
+  height: 200px;
+  width: 300px;
+}
+
+.top {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-head {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.gallery_img {
+  width: 25%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.gallery_img2 {
+  width: 25%;
+  height: 45%;
+  position: absolute;
+  top: 720px;
+  left: 40px;
+}
+
+.phone {
+  position: absolute;
+  top: 740px;
+  left: 160px;
+}
+
+.wave {
+  position: absolute;
+  left: 0px;
+  top: 400px;
+}
+
+ul#menu {
+  list-style: none;
+}
+
+ul#menu li {
+  display: inline;
+}
+
+/*# sourceMappingURL=main.css.map */
