@@ -47,7 +47,7 @@
     </nav>
     <div class="home" id="home">
         <div class="text">
-            <p>Designing the future <br>An aspiring web developer.</p>
+            <p>Designing the future <br>Hi! I'm Ali. An aspiring software engineer.</p>
             <a href="#projects" class="btn">My Projects</a>
         </div>
         <div class="atom-img">
@@ -67,7 +67,7 @@
                 <div class="slider-item-bg">
                     <div class="slider-img">
                         <p class="slider-head">Bear's Bakery</p>
-                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ut? Voluptatem officiis ex voluptas commodi ipsum omnis iure totam error, debitis ab id consectetur at incidunt est numquam labore iusto.</p>
                         <img src="images/mobile.png" alt="">
                     </div>
                 </div>
@@ -78,17 +78,17 @@
                     <div class="slider-img slider-img2">
                         <div class="slider2-text">
                             <p class="slider-head">Ali's Cafe</p>
-                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                            <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rerum vero? Facilis voluptates ipsa iusto tempora repellendus delectus numquam tempore minus, modi consequatur accusantium quo nobis est libero consequuntur pariatur.</p>
                         </div>
-                        <img src="images/desktop.png" alt="">
+                        <img src="images/webpage.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="slider-item">
                 <div class=" slider-item-bg3">
                     <div class=" slider-img3">
-                        <p class="slider-head">Bear's Bakery</p>
-                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <p class="slider-head">Flexbox Froggy</p>
+                        <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minus deserunt eveniet excepturi! Libero et deleniti ex eveniet deserunt? A odit repellendus aliquid mollitia quibusdam numquam facere tenetur porro ex.</p>
                         <img src="images/pngegg.png" alt="">
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="slider-item-bg">
                     <div class="slider-img">
                         <p class="slider-head">Bear's Bakery</p>
-                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea ipsa officiis quo minima voluptatum excepturi vero, pariatur ab architecto, beatae aperiam, vitae cupiditate error dolores dolor explicabo sequi voluptatem?</p>
                         <img src="images/mobile.png" alt="">
                     </div>
                 </div>
@@ -109,17 +109,17 @@
                     <div class="slider-img slider-img2">
                         <div class="slider2-text">
                             <p class="slider-head">Ali's Cafe</p>
-                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                            <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut temporibus vitae aspernatur dolores iusto porro incidunt in excepturi, libero exercitationem totam quas quaerat pariatur. Aut accusantium vitae reiciendis doloremque alias?</p>
                         </div>
-                        <img src="images/desktop.png" alt="">
+                        <img src="images/webpage.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="slider-item">
                 <div class=" slider-item-bg3">
                     <div class=" slider-img3">
-                        <p class="slider-head">Bear's Bakery</p>
-                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <p class="slider-head">Flexbox Froggy</p>
+                        <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsa perferendis asperiores omnis aliquam doloremque porro dolore id temporibus quos. Quasi minus quos, modi consequuntur cum reprehenderit nesciunt enim earum.</p>
                         <img src="images/pngegg.png" alt="">
                     </div>
                 </div>
@@ -220,3 +220,90 @@
             <img src="images/twitter.png" alt="">
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.work-desktop .slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+    <script>
+        $('.work-mobile .slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+
+</html>
