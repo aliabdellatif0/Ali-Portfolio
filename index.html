@@ -1,47 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css"/>
-    
+    <link rel="stylesheet" href="styles/_base.scss">
+    <link rel="stylesheet" href="styles/_components.scss">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/_responsiveness.scss">
+    <title>Home</title>
 </head>
 
-<header>
-    <div class = "top">
-    <img src="images/logo.png" alt="logo">
-    <p>Work About Contact Resume</p>
-    </div>
-</header>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="social mobile-social">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+        <div class="social desktop-social">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+    </nav>
+    <div class="home" id="home">
+        <div class="text">
+            <p>Designing the future <br>Hi! I'm Ali. An aspiring software engineer.</p>
+            <a href="#projects" class="btn">My Projects</a>
+        </div>
+        <div class="atom-img">
+            <img src="images/react.png" alt="">
+        </div>
+        <div class="web-img">
+            <img src="images/ban-img.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images/bg.png" alt="">
+    </div>
+    <div id="work" class="work-desktop">
+        <div class="work-head">Portfolio</div>
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ut? Voluptatem officiis ex voluptas commodi ipsum omnis iure totam error, debitis ab id consectetur at incidunt est numquam labore iusto.</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
 
-  <h1>
-    Designing the future.
-  </h1>
-  <h3>
-    Hi, I'm Ali. An aspiring software engineer.
-  </h3>
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rerum vero? Facilis voluptates ipsa iusto tempora repellendus delectus numquam tempore minus, modi consequatur accusantium quo nobis est libero consequuntur pariatur.</p>
+                        </div>
+                        <img src="images/webpage.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Flexbox Froggy</p>
+                        <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minus deserunt eveniet excepturi! Libero et deleniti ex eveniet deserunt? A odit repellendus aliquid mollitia quibusdam numquam facere tenetur porro ex.</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
 
-  
-  <div class = "gallery">
-      <img src="images/react.png"/>
-      <img src="images/Molecule-Icon.gif"/>
-      
-  </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea ipsa officiis quo minima voluptatum excepturi vero, pariatur ab architecto, beatae aperiam, vitae cupiditate error dolores dolor explicabo sequi voluptatem?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
 
-  <button type="button">My Projects</button>
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut temporibus vitae aspernatur dolores iusto porro incidunt in excepturi, libero exercitationem totam quas quaerat pariatur. Aut accusantium vitae reiciendis doloremque alias?</p>
+                        </div>
+                        <img src="images/webpage.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Flexbox Froggy</p>
+                        <p class="slider-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ipsa perferendis asperiores omnis aliquam doloremque porro dolore id temporibus quos. Quasi minus quos, modi consequuntur cum reprehenderit nesciunt enim earum.</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="work-m" class="work-mobile">
+        <div class="work-head">Portfolio</div>
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        </div>
+                        <img src="images/desktop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-item">
+                <div class="slider-item-bg">
+                    <div class="slider-img">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="slider-item-bg slider-item-bg2">
+                    <div class="slider-img slider-img2">
+                        <div class="slider2-text">
+                            <p class="slider-head">Ali's Cafe</p>
+                            <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        </div>
+                        <img src="images/desktop.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class=" slider-item-bg3">
+                    <div class=" slider-img3">
+                        <p class="slider-head">Bear's Bakery</p>
+                        <p class="slider-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus sint necessitatibus quam laboriosam, iste recusandae! Minima dicta dolorem aut enim?</p>
+                        <img src="images/pngegg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <img class="mobile-bg2" src="images/bg2.PNG" alt="">
+        <p class="p1">About Me</p>
+        <div class="inner-about">
+            <div class="left">
+                <div class="img-bg">
+                    <div class="img">
+                        <img src="images/man.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img class="desktop-bg2" src="images/bg2.PNG" alt="">
+                <p class="p2">Hello world.<br>I’m Ali, a web developer.<br> I enjoy implementing my wide range of coding skills with a touch of creativity to bring you the best webistes.
+                </p>
+                <a href="#" class="btn2">Resume</a>
+            </div>
+        </div>
+        <p id="contact" class="p3">email: ali.abdlaitf@gmail.com</p>
+        <div class="social-footer">
+            <img src="images/linkedin.png" alt="">
+            <img src="images/insta.png" alt="">
+            <img src="images/facebook.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.work-desktop .slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+    <script>
+        $('.work-mobile .slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
-    
-      
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#0099ff" fill-opacity="0.5" d="M0,160L60,176C120,192,240,224,360,202.7C480,181,600,107,720,101.3C840,96,960,160,1080,181.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-  </svg>
-
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#a2d9ff" fill-opacity="1" d="M0,160L60,165.3C120,171,240,181,360,160C480,139,600,85,720,64C840,43,960,53,1080,74.7C1200,96,1320,128,1380,144L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-  </svg>
+    </script>
 </body>
+
 </html>
