@@ -6,35 +6,35 @@ nav {
   display: flex;
 }
 
-nav .logo img {
+nav .navigation img {
   width: 140px;
   height: auto;
 }
 
-nav .navbar ul {
+nav .navigation__links {
   list-style: none;
 }
 
-nav .navbar ul li {
+nav .navigation__links li {
   float: left;
   padding: 35px 20px;
 }
 
-nav .navbar ul li a {
+nav .navigation__links li a {
   text-decoration: none;
   color: black;
   font-size: 25px;
 }
 
-.mobile-social {
+.navigation__socials--mobile {
   display: none;
 }
 
-nav .social {
+nav .navigation__socials {
   margin-left: 100px;
 }
 
-nav .social img {
+nav .navigation__socials img {
   width: 50px;
   height: 50px;
   margin: 40px 20px;
@@ -105,6 +105,7 @@ nav .social img {
 
 .slider {
   overflow: hidden;
+  position: static;
 }
 
 .slider-item {
@@ -238,7 +239,7 @@ nav .social img {
   height: auto;
 }
 
-.p3 {
+.contact__email {
   color: #a3a3a3;
   font-size: 14px;
   display: block;
@@ -255,38 +256,49 @@ nav .social img {
   padding: 10px 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  nav {
-    display: block;
-    text-align: center;
-  }
+.contact {
+  position: relative;
+}
 
-  .desktop-social {
+@media only screen and (max-width: 600px) {
+  .navigation__socials--desktop {
     display: none;
   }
 
-  .mobile-social {
-    display: inline-block;
+  .navigation__logo {
+    display: block;
+  }
+
+  .navigation__links {
+    display: block;
+  }
+
+  .navigation__socials--mobile {
+    display: inline-block !important;
     margin-left: 5px;
     margin-right: 5px;
   }
 
-  .social {
+  .navigation__socials {
     margin-left: 0 !important;
   }
 
-  nav .social img {
+  nav .navigation__socials img {
+    float: right;
     width: 30px;
     height: 30px;
     margin: 20px 10px;
   }
 
-  nav .navbar ul li {
-    float: left;
+  nav .navigation__links {
+    display: inline-block;
+  }
+
+  nav .navigation__links li {
     padding: 15px 5px;
   }
 
-  nav .navbar ul li a {
+  nav .navigation__links li a {
     font-size: 15px;
   }
 
@@ -340,7 +352,7 @@ nav .social img {
     float: none;
   }
 
-  .p3 {
+  .contact__email {
     margin-top: 30px;
   }
 
@@ -349,4 +361,13 @@ nav .social img {
     height: auto;
     padding: 10px 10px;
   }
+}
+nav {
+  display: flex;
+  overflow: hidden;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #202020;
 }
