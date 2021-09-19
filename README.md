@@ -9,4 +9,4 @@ My portfolio website has been designed using an extensive amount of HTML AND SCS
 My portfolio incorporates of all the enticing and intellectually stimulating projects I've taken upon and will soon be updated by far more.
 
 A Figma design approach was taken before beginning the coding of HTML AND SCSS.
-[https://www.figma.com/file/ehGauhBdcFSiK0VUtGy8qm/Prototype-portfolio?node-id=0%3A1](https://www.markdownguide.org/basic-syntax/#links)
+[Figma design](https://www.figma.com/file/ehGauhBdcFSiK0VUtGy8qm/Prototype-portfolio?node-id=0%3A1)
