@@ -3,27 +3,27 @@
         display: block;
         text-align: center;
     }
-    .desktop-social {
+    .navigation__socials--desktop {
         display: none;
     }
-    .mobile-social {
+    .navigation__socials--mobile {
         display: inline-block;
         margin-left: 5px;
         margin-right: 5px;
     }
-    .social {
+    .navigation__socials {
         margin-left: 0 !important;
     }
-    nav .social img {
+    nav .navigation__socials img {
         width: 30px;
         height: 30px;
         margin: 20px 10px;
     }
-    nav .navbar ul li {
+    nav .navigation__links li {
         float: left;
         padding: 15px 5px;
     }
-    nav .navbar ul li a {
+    nav .navigation__links li a {
         font-size: 15px;
     }
     .home {
