@@ -261,17 +261,20 @@ nav .navigation__socials img {
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    display: block;
-    text-align: center;
-  }
-
   .navigation__socials--desktop {
     display: none;
   }
 
+  .navigation__logo {
+    display: block;
+  }
+
+  .navigation__links {
+    display: block;
+  }
+
   .navigation__socials--mobile {
-    display: inline-block;
+    display: inline-block !important;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -281,13 +284,17 @@ nav .navigation__socials img {
   }
 
   nav .navigation__socials img {
+    float: right;
     width: 30px;
     height: 30px;
     margin: 20px 10px;
   }
 
+  nav .navigation__links {
+    display: inline-block;
+  }
+
   nav .navigation__links li {
-    float: left;
     padding: 15px 5px;
   }
 
