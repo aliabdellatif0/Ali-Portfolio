@@ -261,22 +261,28 @@ nav .navigation__socials img {
 }
 
 @media only screen and (max-width: 600px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
   .navigation__socials--desktop {
     display: none;
   }
 
   .navigation__logo {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .navigation__links {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .navigation__socials--mobile {
-    display: inline-block !important;
-    margin-left: 5px;
-    margin-right: 5px;
+    display: flex;
+    justify-content: center;
   }
 
   .navigation__socials {
